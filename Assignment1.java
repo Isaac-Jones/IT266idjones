@@ -19,10 +19,11 @@ public class Assignment1 {
         String groovyWord = "I am an IS major in a CS class";
         
         
-        for(int index = 0; index < groovyWord.length(); index++)
+        for(int index = groovyWord.length(); index > groovyWord.length(); index--)
         {
-            char letter = groovyWord.charAt(index);
-            System.out.print(letter);
+            System.out.print(index);
+            //char letter = groovyWord.charAt(index);
+            //System.out.print(letter);
         }
     }
     
