@@ -24,7 +24,8 @@ public class Assignment1 {
         String output = "";
         
         System.out.print("The length of your text is: " + input.length() + "\n");
-
+        
+        System.out.print("\nYour text with every other letter capitalized: ");
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
             if (i % 2 == 0) {
