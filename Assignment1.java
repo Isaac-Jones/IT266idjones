@@ -16,13 +16,14 @@ public class Assignment1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) 
-    {
-        
-        System.out.print("Please enter a string");
+    {        
+        System.out.print("Please enter text: ");
         Scanner scan = new Scanner(System.in);
 	String input = scan.nextLine();
         
         String output = "";
+        
+        System.out.print("The length of your text is: " + input.length() + "\n");
 
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
