@@ -17,19 +17,17 @@ public class Assignment1 {
      */
     public static void main(String[] args) 
     {
+        //Aaaaaand now, it prints cRaZyPrInT!!!
         
-        System.out.print("Please enter a string");
-        Scanner scan = new Scanner(System.in);
-	String input = scan.nextLine();
-        
+        String cRaZyPrInT = "I am an IS major in a CS class";
         String output = "";
 
-        for (int i = 0; i < input.length(); i++) {
-            char c = input.charAt(i);
+        for (int i = 0; i < cRaZyPrInT.length(); i++) {
+            char c = cRaZyPrInT.charAt(i);
             if (i % 2 == 0) {
-                output += input.substring(i, i + 1).toUpperCase();
+                output += cRaZyPrInT.substring(i, i + 1).toUpperCase();
             } else {
-                output += input.substring(i, i + 1);
+                output += cRaZyPrInT.substring(i, i + 1);
             }
         }
         System.out.println(output);
