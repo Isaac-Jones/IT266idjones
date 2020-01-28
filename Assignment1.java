@@ -5,6 +5,7 @@
  */
 package assignment1;
 
+import java.util.*;
 /**
  *
  * @author Isaac
@@ -16,15 +17,19 @@ public class Assignment1 {
      */
     public static void main(String[] args) 
     {
-        String groovyWord = "I am an IS major in a CS class";
+        //Aaaaaand now, it prints cRaZyPrInT!!!
         
-        
-        for(int index = groovyWord.length(); index > groovyWord.length(); index--)
-        {
-            System.out.print(index);
-            //char letter = groovyWord.charAt(index);
-            //System.out.print(letter);
+        String cRaZyPrInT = "I am an IS major in a CS class";
+        String output = "";
+
+        for (int i = 0; i < cRaZyPrInT.length(); i++) {
+            char c = cRaZyPrInT.charAt(i);
+            if (i % 2 == 0) {
+                output += cRaZyPrInT.substring(i, i + 1).toUpperCase();
+            } else {
+                output += cRaZyPrInT.substring(i, i + 1);
+            }
         }
+        System.out.println(output);
     }
-    
 }
